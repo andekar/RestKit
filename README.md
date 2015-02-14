@@ -72,7 +72,7 @@ RestKit is broken into several modules that cleanly separate the mapping engine 
   <tr>
     <td><a href="http://restkit.org/api/latest/Classes/RKRelationshipMapping.html">RKRelationshipMapping</a></td>
     <td>Specifies a desired mapping of a nested to-one or to-many child objects in in terms of a source and destination key path and an <tt>RKObjectMapping</tt> with which to map the attributes of the child object.</td>
-  </tr>  
+  </tr>
   <tr>
     <td><a href="http://restkit.org/api/latest/Classes/RKDynamicMapping.html">RKDynamicMapping</a></td>
     <td>Specifies a flexible mapping in which the decision about which <tt>RKObjectMapping</tt> is to be used to process a given document is deferred to run time.</td>
@@ -84,7 +84,7 @@ RestKit is broken into several modules that cleanly separate the mapping engine 
   <tr>
     <td><a href="http://restkit.org/api/latest/Classes/RKMappingOperation.html">RKMappingOperation</a></td>
     <td>An <tt>NSOperation</tt> that performs a mapping between object representations using an <tt>RKObjectMapping</tt>.</td>
-  </tr>  
+  </tr>
   <tr><th colspan="2" style="text-align:center;"><a href="Code/Network/README.md">Networking</a></th></tr>
   <tr>
     <td><a href="http://restkit.org/api/latest/Classes/RKRequestDescriptor.html">RKRequestDescriptor</a></td>
@@ -105,7 +105,7 @@ RestKit is broken into several modules that cleanly separate the mapping engine 
   <tr>
     <td><a href="http://restkit.org/api/latest/Classes/RKResponseMapper.html">RKResponseMapperOperation</a></td>
     <td>An <tt>NSOperation</tt> that provides support for object mapping an <tt>NSHTTPURLResponse</tt> using a set of <tt>RKResponseDescriptor</tt> objects.</td>
-  </tr>  
+  </tr>
   <tr>
     <td><a href="http://restkit.org/api/latest/Classes/RKObjectManager.html">RKObjectManager</a></td>
     <td>Captures the common patterns for communicating with a RESTful web application over HTTP using object mapping including:
@@ -138,7 +138,7 @@ RestKit is broken into several modules that cleanly separate the mapping engine 
   <tr>
     <td><a href="http://restkit.org/api/latest/Classes/RKConnectionDescription.html">RKConnectionDescription</a></td>
     <td>Describes a mapping for establishing a relationship between Core Data entities using foreign key attributes.</td>
-  </tr>  
+  </tr>
   <tr>
     <td><a href="http://restkit.org/api/latest/Classes/RKManagedObjectRequestOperation.html">RKManagedObjectRequestOperation</a></td>
     <td>An <tt>NSOperation</tt> subclass that sends an HTTP request and performs object mapping on the parsed response body to create <tt>NSManagedObject</tt> instances, establishes relationships between objects using <tt>RKConnectionDescription</tt> objects, and cleans up orphaned objects that no longer exist in the remote backend system.</td>
@@ -528,7 +528,7 @@ RKMappingTest *mappingTest = [[RKMappingTest alloc] initWithMapping:mapping sour
 
 ## Requirements
 
-RestKit requires [iOS 5.1.1](http://developer.apple.com/library/ios/#releasenotes/General/WhatsNewIniPhoneOS/Articles/iOS5.html#//apple_ref/doc/uid/TP30915195-SW1) and above or [Mac OS X 10.7](http://developer.apple.com/library/mac/#releasenotes/MacOSX/WhatsNewInOSX/Articles/MacOSX10_7.html#//apple_ref/doc/uid/TP40010355-SW5) and above.
+RestKit requires [iOS 6.0](http://developer.apple.com/library/ios/#releasenotes/General/WhatsNewIniPhoneOS/Articles/iOS5.html#//apple_ref/doc/uid/TP30915195-SW1) and above or [Mac OS X 10.8](http://developer.apple.com/library/mac/#releasenotes/MacOSX/WhatsNewInOSX/Articles/MacOSX10_7.html#//apple_ref/doc/uid/TP40010355-SW5) and above.
 
 Several third-party open source libraries are used within RestKit, including:
 
@@ -588,8 +588,8 @@ Change to the directory of your Xcode project, and Create and Edit your Podfile 
 $ cd /path/to/MyProject
 $ touch Podfile
 $ edit Podfile
-platform :ios, '5.0'
-# Or platform :osx, '10.7'
+platform :ios, '6.0'
+# Or platform :osx, '10.8'
 pod 'RestKit', '~> 0.20.0'
 
 # Testing and Search are optional components
